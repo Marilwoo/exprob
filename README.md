@@ -1,4 +1,4 @@
-# Experimental Robotics Laboratory - First assignment WIIII
+# Experimental Robotics Laboratory - First assignment
 
 ###### Maria Luisa Aiachini 4375373
 
