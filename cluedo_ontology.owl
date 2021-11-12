@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.emarolab.it/cluedo-ontology#"
      xml:base="http://www.emarolab.it/cluedo-ontology"
-     xmlns:cluedo-ontology="http://www.emarolab.it/cluedo-ontology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cluedo-ontology="http://www.emarolab.it/cluedo-ontology#">
     <owl:Ontology rdf:about="http://www.emarolab.it/cluedo-ontology"/>
     
 
@@ -19,12 +19,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.emarolab.it/cluedo-ontology#what -->
-
 
     <owl:ObjectProperty rdf:about="http://www.emarolab.it/cluedo-ontology#what">
         <rdfs:domain rdf:resource="http://www.emarolab.it/cluedo-ontology#HYPOTHESIS"/>
@@ -35,7 +33,6 @@
 
     <!-- http://www.emarolab.it/cluedo-ontology#where -->
 
-
     <owl:ObjectProperty rdf:about="http://www.emarolab.it/cluedo-ontology#where">
         <rdfs:domain rdf:resource="http://www.emarolab.it/cluedo-ontology#HYPOTHESIS"/>
         <rdfs:range rdf:resource="http://www.emarolab.it/cluedo-ontology#PLACE"/>
@@ -44,7 +41,6 @@
 
 
     <!-- http://www.emarolab.it/cluedo-ontology#who -->
-
 
     <owl:ObjectProperty rdf:about="http://www.emarolab.it/cluedo-ontology#who">
         <rdfs:domain rdf:resource="http://www.emarolab.it/cluedo-ontology#HYPOTHESIS"/>
@@ -61,12 +57,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.emarolab.it/cluedo-ontology#hasID -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.emarolab.it/cluedo-ontology#hasID">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -84,12 +78,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.emarolab.it/cluedo-ontology#COMPLETED -->
-
 
     <owl:Class rdf:about="http://www.emarolab.it/cluedo-ontology#COMPLETED">
         <owl:equivalentClass>
@@ -120,7 +112,6 @@
 
     <!-- http://www.emarolab.it/cluedo-ontology#HYPOTHESIS -->
 
-
     <owl:Class rdf:about="http://www.emarolab.it/cluedo-ontology#HYPOTHESIS">
         <owl:equivalentClass>
             <owl:Class>
@@ -146,7 +137,6 @@
 
 
     <!-- http://www.emarolab.it/cluedo-ontology#INCONSISTENT -->
-
 
     <owl:Class rdf:about="http://www.emarolab.it/cluedo-ontology#INCONSISTENT">
         <owl:equivalentClass>
@@ -177,13 +167,11 @@
 
     <!-- http://www.emarolab.it/cluedo-ontology#PERSON -->
 
-
     <owl:Class rdf:about="http://www.emarolab.it/cluedo-ontology#PERSON"/>
     
 
 
     <!-- http://www.emarolab.it/cluedo-ontology#PLACE -->
-
 
     <owl:Class rdf:about="http://www.emarolab.it/cluedo-ontology#PLACE"/>
     
@@ -191,42 +179,7 @@
 
     <!-- http://www.emarolab.it/cluedo-ontology#WEAPON -->
 
-
     <owl:Class rdf:about="http://www.emarolab.it/cluedo-ontology#WEAPON"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://www.emarolab.it/cluedo-ontology#ID2 -->
-
-
-    <owl:Thing rdf:about="http://www.emarolab.it/cluedo-ontology#ID2">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.emarolab.it/cluedo-ontology#HYPOTHESIS"/>
-        <where rdf:resource="http://www.emarolab.it/cluedo-ontology#Kitchen"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://www.emarolab.it/cluedo-ontology#Kitchen -->
-
-
-    <owl:Thing rdf:about="http://www.emarolab.it/cluedo-ontology#Kitchen">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.emarolab.it/cluedo-ontology#HYPOTHESIS"/>
-        <rdf:type rdf:resource="http://www.emarolab.it/cluedo-ontology#PLACE"/>
-    </owl:Thing>
     
 
 
@@ -238,7 +191,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -247,16 +199,9 @@
             <rdf:Description rdf:about="http://www.emarolab.it/cluedo-ontology#WEAPON"/>
         </owl:members>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.emarolab.it/cluedo-ontology#Kitchen"/>
-        </owl:distinctMembers>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.0.5.20170104-0800) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
