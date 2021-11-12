@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="armor" type="execute" name="armor_service" args="it.emarolab.armor.ARMORMainService"/>
+		<node name="controller" pkg="exprob" type ="controller.py" output = "screen"/>
+		<node name="oracle"  pkg="exprob" type="oracle.py"  output = "screen"/>
+		<node name="move_to"  pkg="exprob" type="move_to.py" />
+		<node name="onto_interface"  pkg="exprob" type="onto_interface.py" output="screen" />
+</launch>
