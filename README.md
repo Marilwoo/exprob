@@ -103,4 +103,4 @@ Surely the main improvement to this system will be the implementation of a real 
 
 Also will be an improvement the use of a simulated enviroment to better understand the movement and the features of this system.
 ## Contacts
-Maria Luisa Aiachini: mlu97@libero.it
+- Maria Luisa Aiachini: s4375373@studenti.unige.it
