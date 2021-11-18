@@ -5,8 +5,6 @@
 ## Description
 This assignment is a Cluedo simulator. There is a robot going around reaching random rooms. Once the robot reaches one it asks for a hint to a Oracle. It gives back a hint that belongs to a given hypothesis. The robot changes room and goes on taking hints until it has a full hypothesis. One this happens the robots checks if the hypothesis is complete and consistent and, if it is, goes to home for checking if it is the winning one: if it is the game stops, if not it starts wandering again to find more hints.
 
-Here the Doxygen documentation [Doxygen Documentation Here](https://github.com/Marilwoo/exprob/blob/master/Docs/index.html)
-
 ## Architecture
 For this project there are four nodes: Robot controller, Oracle, Move to and Ontology Interface. Also there is the Armor server, which was not implemented for this assignment, but was given. In the following figure there is the component diagram to better understand how the nodes communicate with each other.
 ### Component diagram
